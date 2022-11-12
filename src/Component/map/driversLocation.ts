@@ -20,6 +20,7 @@ axios(config)
         lat: res.data.results[i].geometry.location.lat,
         lng: res.data.results[i].geometry.location.lng,
       });
+      console.log()
     }
   })
   .catch(function (error) {

@@ -1,8 +1,8 @@
 import { initializeApp } from "firebase/app";
 
-const FIREBASE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+const FIREBASE_API_KEY = "AIzaSyBqGGk_x_afB6l1U9feD-uKObKKdeToNCg";
 const firebaseConfig = {
-  apiKey: `${FIREBASE_API_KEY}`,
+  apiKey: `AIzaSyBqGGk_x_afB6l1U9feD-uKObKKdeToNCg`,
   authDomain: "ubereum-30106.firebaseapp.com",
   projectId: "ubereum-30106",
   storageBucket: "ubereum-30106.appspot.com",
