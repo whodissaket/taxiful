@@ -7,11 +7,12 @@ import Pick from './Pages/pick';
 import Drop from './Pages/drop';
 import NoPage from './Pages/Nopage';
 import Auth from './Pages/auth';
-
-// const cors = require('cors');  
+// import express from 'express';
+// import cors from 'cors';
+// const app = express()
 // app.use(cors());
 
-const  App:React.FC = () => {
+const  App = () => {
     // const [showInsatlledMessage, setShowInsatlledMessage] = useState<boolean>(false);
 
    // Detects if device is on iOS 
