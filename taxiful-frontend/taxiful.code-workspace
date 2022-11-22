@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../taxiful-backend"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502
+	}
+}
