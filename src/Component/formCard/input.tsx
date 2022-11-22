@@ -70,12 +70,14 @@ const FormInput: React.FC<Props> = ({ toggleBottomSheet }) => {
     useGetAddressQuery<any>(currentCordinate);
 
   const fetchPredictions = (input: string) => {
+    const link1=`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${input}&components=country:${
+      countryCode !== null ? countryCode : "IN"
+    }&key=${GOOGLE_API_KEY}`
+    const link2=`http://localhost:8080/api/maps/input?input=${input}`
     // const proxy = "https://mighty-island-92084.herokuapp.com/";
     setIsLoading(true);
-    axios(
-      `https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${input}&components=country:${
-        countryCode !== null ? countryCode : "IN"
-      }&key=${GOOGLE_API_KEY}`,
+    axios(link2
+      ,
       {
         method: "GET",
         headers: {

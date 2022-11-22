@@ -9,7 +9,8 @@ const { lat, lng } = currentAddress;
 
 const config: object = {
   method: "get",
-  url: `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat}%2C${lng}&radius=3000&type=restaurants&keyword=hospital&key=AIzaSyBgnDUSbpEJJh-WUl3UJj7_O4Pe8tep0mE`,
+  url:`http://localhost:8080/api/drivers?lat=${lat}&lng=${lng}`,
+  //url: `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat}%2C${lng}&radius=3000&type=restaurants&keyword=hospital&key=AIzaSyBgnDUSbpEJJh-WUl3UJj7_O4Pe8tep0mE`,
   headers: {},
 };
 
