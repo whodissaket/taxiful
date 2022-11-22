@@ -1,0 +1,81 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks":[
+        {
+            "label": "Server",
+            "type": "shell",
+            "command": "cd taxiful-backend/ ; npm start",
+            "problemMatcher": [],
+            "detail": "Server start",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Client",
+            "type": "shell",
+            "command": "cd taxiful-frontend/ ; npm run start",
+            "problemMatcher": [],
+            "detail": "Client Start",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Start",
+            "dependsOn": [
+                "Client",
+                "Server"
+            ],
+            "problemMatcher": [],
+            "detail": "Taxiful Start",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Server I",
+            "type": "shell",
+            "command": "cd taxiful-backend/ ; npm install",
+            "problemMatcher": [],
+            "detail": "Server start",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Client I",
+            "type": "shell",
+            "command": "cd taxiful-frontend/ ; npm install",
+            "problemMatcher": [],
+            "detail": "Client Start",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Install",
+            "dependsOn": [
+                "Client I",
+                "Server I"
+            ],
+            "problemMatcher": [],
+            "detail": "Taxiful Install",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}
